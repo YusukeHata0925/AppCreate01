@@ -22,31 +22,31 @@
  
   <div id="container">
   <div id="theTarget">
-    <div class="image1"> 
+    <img src="/images/image1.jpg" alt="imgタグ" width="100%" height="300px">
       <div class="main-visual-content">
         <p class="main-visual-text">The world is a book<br>and those who do not travel<br>read only one page.</p>
         <p class="main-visual-name">St. Augustine</p>
       </div>
     </div>
-    <div class="image2">
+    <img src="/images/image2.jpg" alt="imgタグ" width="100%" height="300px">
       <div class="main-visual-content">
         <p class="main-visual-text">The world is a book<br>and those who do not travel<br>read only one page.</p>
         <p class="main-visual-name">St. Augustine</p>
       </div>
     </div>
-    <div class="image3">
+    <img src="/images/image3.jpg" alt="imgタグ" width="100%" height="300px">
       <div class="main-visual-content">
         <p class="main-visual-text">The world is a book<br>and those who do not travel<br>read only one page.</p>
         <p class="main-visual-name">St. Augustine</p>
       </div>
     </div>
-    <div class="image4">
+    <img src="/images/image4.jpg" alt="imgタグ" width="100%" height="300px">
       <div class="main-visual-content">
         <p class="main-visual-text">The world is a book<br>and those who do not travel<br>read only one page.</p>
         <p class="main-visual-name">St. Augustine</p>
       </div>
     </div>
-    <div class="image5">
+    <img src="/images/image5.jpg" alt="imgタグ" width="100%" height="300px">
       <div class="main-visual-content">
         <p class="main-visual-text">The world is a book<br>and those who do not travel<br>read only one page.</p>
         <p class="main-visual-name">St. Augustine</p>
@@ -62,7 +62,7 @@
       <div class="blog-box">
       	<% @blogs.each do |blog| %>
         <div class="blog-item clearfix">
-           <div class="blog-image"> <%= image_tag('img/forest.jpg',  class: 'blog-image') %></div>
+           <div class="blog-image"> <%= image_tag '/images/forest.jpg',  :size =>'276.92X180' %></div>
           <section class="blog-text">
             <h3 class="blog-text-headline"> <%= link_to blog.title, blog_path(blog) %></h3>
             <p class="blog-date"> <%= blog.created_at %></p>
